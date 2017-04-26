@@ -6,16 +6,15 @@ body{
 			@include make-row;
 				
 				>.logo-container{
-				@include make-xs-column(8);
-				@include make-sm-column(3);
+				@include make-xs-column(6);
+				@include make-sm-column(5);
 				@include make-md-column(3);
 
 					>.logo-container__logo{
 					@include make-xs-column-offset(0);
-					@include make-sm-column-offset(4);
+					@include make-sm-column-offset(0);
 					@include make-md-column-offset(0);
-					position: absolute;
-					z-index: 2;
+					position: relative;
 					}
 				}
 			}
@@ -25,10 +24,6 @@ body{
 	background-color: #876ED7;
 	border-top: 3px solid #412C84;
 	border-bottom: 3px solid #412C84;
-	height: 100px;
-	position: relative;
-	top: 85px;
-	left: 0px;
 		
 		> .container{
 			
@@ -41,7 +36,6 @@ body{
 				border-radius: 0px;
 				background-color: #876ED7;
 				border: none;
-				padding-top: 40px;
 				margin-bottom: 0px;
 					
 					.navbar-collapse{
@@ -52,23 +46,27 @@ body{
 							 	
 							 	> li{
 							 		
-							 		&.active{
-							 			
-							 			> a{
-							 				background: #6c8cd5;
-							 			}
+							 		> .dropdown-menu{
+							 			background-color: #876ed7;
 							 		}
-							 		
-							 		a{
-							 		color: #06266E;
-									font-size: 20px;
-									font-family: Rubik Mono One;
-									padding-top: 30px;
-									padding-bottom: 0px;
-									&:hover{
-										background: #6c8cd5;
-									}
-							 		}
+								 		
+								 		&.active{
+								 			
+								 			> a{
+								 				background: #6c8cd5;
+								 			}
+								 		}
+								 		
+								 		a{
+								 		color: #06266E;
+										font-size: 20px;
+										font-family: Rubik Mono One;
+										padding-top: 30px;
+										padding-bottom: 0px;
+										&:hover{
+											background: #6c8cd5;
+										}
+								 		}
 							 	}
 							}
 					}
