@@ -1,5 +1,57 @@
 body{
 	> header{
-		padding: 25px 0;
+		padding: 15px;
+		>.content{
+			@include make-row;
+			>.logo-container{
+			@include make-md-column(3);
+			>.logo-container__logo{
+			@include make-md-column(9);
+			}
+			}
+		}
+	}
+	> #navegacao{
+	background-color: #876ED7;
+	border-top: 3px solid #412C84;
+	border-bottom: 3px solid #412C84;
+	height: 100px;
+		> .container{
+			> #navegacao__content{
+				@include make-md-column(12);
+				.navbar{
+				border-radius: 0px;
+				background-color: #876ED7;
+				border: none;
+				padding-top: 40px;
+				padding-right: 180px;
+				margin-bottom: 0px;
+					.navbar-collapse{
+						border: none;
+							> ul.navbar-nav{
+							 	> li{
+							 		&.active{
+							 			> a{
+							 				background: #6c8cd5;
+							 			}
+							 		}
+							 		a{
+							 		color: #06266E;
+									font-size: 25px;
+									font-family: Rubik Mono One;
+									padding-top: 30px;
+									padding-bottom: 0px;
+									&:hover{
+										background: #6c8cd5;
+									}
+							 		}
+							 	}
+							}
+					}
+				}
+			}
+
+		}
+
 	}
 }
