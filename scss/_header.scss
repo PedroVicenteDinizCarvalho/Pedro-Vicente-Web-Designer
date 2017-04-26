@@ -1,43 +1,67 @@
 body{
 	> header{
 		padding: 15px;
+		
 		>.content{
 			@include make-row;
-			>.logo-container{
-			@include make-md-column(3);
-			>.logo-container__logo{
-			@include make-md-column(9);
-			}
+				
+				>.logo-container{
+				@include make-xs-column(8);
+				@include make-sm-column(3);
+				@include make-md-column(3);
+
+					>.logo-container__logo{
+					@include make-xs-column-offset(0);
+					@include make-sm-column-offset(4);
+					@include make-md-column-offset(0);
+					position: absolute;
+					z-index: 2;
+					}
+				}
 			}
 		}
-	}
+	
 	> #navegacao{
 	background-color: #876ED7;
 	border-top: 3px solid #412C84;
 	border-bottom: 3px solid #412C84;
 	height: 100px;
+	position: relative;
+	top: 85px;
+	left: 0px;
+		
 		> .container{
+			
 			> #navegacao__content{
 				@include make-md-column(12);
+				
 				.navbar{
+				@include make-md-column(9);
+				@include make-md-column-offset(3);
 				border-radius: 0px;
 				background-color: #876ED7;
 				border: none;
 				padding-top: 40px;
-				padding-right: 180px;
 				margin-bottom: 0px;
+					
 					.navbar-collapse{
+						background-color: #876ED7;
 						border: none;
+							
 							> ul.navbar-nav{
+							 	
 							 	> li{
+							 		
 							 		&.active{
+							 			
 							 			> a{
 							 				background: #6c8cd5;
 							 			}
 							 		}
+							 		
 							 		a{
 							 		color: #06266E;
-									font-size: 25px;
+									font-size: 20px;
 									font-family: Rubik Mono One;
 									padding-top: 30px;
 									padding-bottom: 0px;
