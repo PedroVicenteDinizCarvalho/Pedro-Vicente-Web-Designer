@@ -1,0 +1,39 @@
+.jumbotron{
+	background-color: #876ed7;
+	margin-top: 10px;
+	border-top: 3px solid #412C84;
+	border-bottom: 3px solid #412C84;
+
+	.container{
+		@include make-row;
+			
+			hgroup{
+			
+				.img-container{
+					@include make-xs-column(11);
+					@include make-sm-column(4);
+					@include make-md-column(4);
+
+					.img-container__img{
+						@include make-xs-column-offset(1);
+						@include make-sm-column-offset(5);
+						@include make-md-column-offset(5);
+							
+							> img{
+								position: relative;
+								top: 5px;
+								margin: 0;
+								}
+							}
+					    }
+					
+
+			h2{
+				text-align: right;
+			}
+			p{
+				text-align: right;
+			}
+		}
+	}
+}

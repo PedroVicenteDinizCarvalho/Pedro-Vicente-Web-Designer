@@ -1,22 +1,25 @@
 #slider .item{
 	position: relative;
-	height: 300px;
-	width: 300px;
-		
-		> hgroup{
-			
-			> h2{
 
-			}
-
-				> p{
-					padding-top: 50px;
-				}
 					> img{
 					display: block;
 					width: 100%;
 					height: auto;
-					color: #876ed7;
+					padding-top: 30px;
 					}
-		}
 }
+
+.article{
+	width: 300px;
+
+		> hgroup{
+			text-align: center;
+			> h2{
+
+			}
+
+			> p{
+			padding-top: 50px;
+			}
+		}
+	}
