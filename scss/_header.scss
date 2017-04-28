@@ -12,7 +12,7 @@ body{
 
 					>.logo-container__logo{
 					@include make-xs-column-offset(0);
-					@include make-sm-column-offset(0);
+					@include make-sm-column-offset(1);
 					@include make-md-column-offset(3);
 					position: relative;
 					}
