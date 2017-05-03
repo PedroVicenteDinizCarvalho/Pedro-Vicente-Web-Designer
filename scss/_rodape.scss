@@ -2,20 +2,74 @@ footer{
 	
 	 .navbar{
 	 	background-color: #876ed7;
-	 	
+	 	border-top: 3px solid #412C84;
 	 		.container-fluid{
 
-	 			> h3{
-	 			  
-	 			}
-				
-				> img{
-					
-				}
-				
-				> h4{
-					text-align: center;
-				}
+	 				.h3celular-container{
+	 					@include make-xs-column(9);
+						@include make-sm-column(4);
+						@include make-md-column(4);
+
+	 					.h3celular-container__celular{
+	 						@include make-xs-column-offset(0);
+							@include make-sm-column-offset(0);
+							@include make-md-column-offset(2);
+
+				 			> h3{
+				 			 	font-size: 20px;
+				 			 	margin: 0px;
+				 			}
+				 		}
+				 	}
+
+				 	.h3email-container{
+				 		@include make-xs-column(8);
+						@include make-sm-column(4);
+						@include make-md-column(4);
+
+				 		.h3email-container__email{
+				 			@include make-xs-column-offset(0);
+							@include make-sm-column-offset(0);
+							@include make-md-column-offset(6);
+
+				 			> h3{
+				 				font-size: 20px;
+				 				margin: 0px;
+				 			}
+				 		}
+				 	}
+
+					.img-container{
+						@include make-xs-column(6);
+						@include make-sm-column(4);
+						@include make-md-column(3);
+
+						.img-container__img{
+						@include make-xs-column-offset(0);
+						@include make-sm-column-offset(5);
+						@include make-md-column-offset(7);
+
+							> img{
+								margin: 0px;
+							}
+						}
+					}
+
+					.h4developer-container{
+						@include make-xs-column(6);
+						@include make-sm-column(12);
+						@include make-md-column(12);
+
+						.h4developer-container__developer{
+							@include make-xs-column-offset(0);
+							@include make-sm-column-offset(0);
+							@include make-md-column-offset(0);
+
+							> h4{
+								text-align: center;
+							}
+						}
+					}
 		}
 	}
 

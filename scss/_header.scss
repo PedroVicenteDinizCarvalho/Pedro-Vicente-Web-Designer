@@ -28,10 +28,13 @@ body{
 		> .container{
 		
 			> #navegacao__content{
+				@include make-xs-column(12);
+				@include make-sm-column(12);
 				@include make-md-column(12);
 				
 				.navbar{
-				@include make-md-column(9);
+				@include make-xs-column-offset(0);
+				@include make-sm-column-offset(0);
 				@include make-md-column-offset(3);
 				border-radius: 0px;
 				background-color: #876ED7;
@@ -41,13 +44,14 @@ body{
 					.navbar-collapse{
 						background-color: #876ED7;
 						border: none;
-							
+
 							> ul.navbar-nav{
 							 	
 							 	> li{
 							 		
 							 		> .dropdown-menu{
 							 			background-color: #876ed7;
+
 							 		}
 								 		
 								 		&.active{
@@ -59,7 +63,7 @@ body{
 								 		
 								 		a{
 								 		color: #06266E;
-										font-size: 20px;
+										font-size: 19px;
 										font-family: Rubik Mono One;
 										padding-top: 30px;
 										padding-bottom: 0px;
