@@ -10,7 +10,8 @@
 			
 			hgroup{
 				position: relative;
-			
+				color: #3F3F51;
+				font-family: Rubik Mono One;
 
 				.img-container{
 					@include make-xs-column(12);
@@ -34,11 +35,11 @@
 					@include make-md-column(7);
 			h2{
 				text-align: center;
-				font-size:30px;
+				font-size:25px;
 			}
 			p{
 				text-align: center;
-				
+				font-size: 13px;
 			}
 			}
 		}

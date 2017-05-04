@@ -1,5 +1,6 @@
 #artigos{
 	.container-fluid{
+		color: #3F3F51;
 
 		.titulo-container{
 			@include make-xs-column(12);
@@ -31,7 +32,10 @@
 				@include make-md-column-offset(3);
 
 				> .img-responsive{
-					
+					max-width: 100%;
+					height: auto;
+					display: block;
+					margin: auto;
 				}
 			}
 		}
@@ -44,12 +48,13 @@
 			.paragrafo-right-container__paragrafo{
 				@include make-xs-column-offset(0);
 				@include make-sm-column-offset(0);
-				@include make-md-column-offset(1);
+				@include make-md-column-offset(2);
 
 				> p{
 					font-size: 13px;
 					font-family: Rubik Mono One;
 					text-align: center;
+					padding-top: 30px;
 				}
 			}
 		}
@@ -62,12 +67,13 @@
 			.paragrafo-left-container__paragrafo{
 				@include make-xs-column-offset(0);
 				@include make-sm-column-offset(0);
-				@include make-md-column-offset(1);
+				@include make-md-column-offset(2);
 
 				> p{
 					font-size: 13px;
 					font-family: Rubik Mono One;
 					text-align: center;
+					padding-top: 30px;
 				}
 			}
 		}
@@ -75,18 +81,22 @@
 		.img-right-container{
 			@include make-xs-column(12);
 			@include make-sm-column(5);
-			@include make-md-column(4);
+			@include make-md-column(5);
 
 			.img-right-container__img{
 				@include make-xs-column-offset(0);
 				@include make-sm-column-offset(0);
-				@include make-md-column-offset(3);
+				@include make-md-column-offset(2);
 
 					> .img-responsive{
-
+						max-width: 100%;
+						height: auto;
+						display: block;
+						margin: auto;
 					}
 			}
 		}
 	}
 }
+
 
