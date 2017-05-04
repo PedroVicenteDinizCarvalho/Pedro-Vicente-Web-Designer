@@ -1,20 +1,27 @@
-#slider{
+#sliderservicos{
+	margin-bottom: 5px;
 
-	.carousel{
+	.carousel-inner{
 		margin-top: 5px;
+		
 		hgroup{
-
-			> h2{
-				text-align: center;
-				margin-top: 5px;
-			}
-
+			font-family: Rubik Mono One;
+			color: #876ed7;
+			
 			> img{
 
 			}
 
-			> p{
-				text-align: center;
+			.carousel-caption{
+
+				> h2{
+					font-size: 25px;
+					
+				}
+
+				> p{
+					font-size: 13px;
+				}
 			}
 
 		}

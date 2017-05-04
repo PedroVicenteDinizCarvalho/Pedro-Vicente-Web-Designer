@@ -1,6 +1,8 @@
 #artigos{
+
 	.container-fluid{
 		color: #3F3F51;
+		font-family: Rubik Mono One;
 
 		.titulo-container{
 			@include make-xs-column(12);
@@ -14,7 +16,6 @@
 
 				> h2{
 					font-size: 25px;
-					font-family: Rubik Mono One;
 					text-align: center;
 					border-top: 3px solid #412C84;
 				}
@@ -52,7 +53,6 @@
 
 				> p{
 					font-size: 13px;
-					font-family: Rubik Mono One;
 					text-align: center;
 					padding-top: 30px;
 				}
