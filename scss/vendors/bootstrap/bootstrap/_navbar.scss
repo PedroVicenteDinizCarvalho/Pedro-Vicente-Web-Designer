@@ -462,7 +462,7 @@
       &,
       &:hover,
       &:focus {
-        background-color: $navbar-default-link-active-bg;
+        background-color: #6c8cd5;
         color: $navbar-default-link-active-color;
       }
     }
@@ -483,7 +483,7 @@
           &:hover,
           &:focus {
             color: $navbar-default-link-active-color;
-            background-color: $navbar-default-link-active-bg;
+            background-color: #6c8cd5;
           }
         }
         > .disabled > a {

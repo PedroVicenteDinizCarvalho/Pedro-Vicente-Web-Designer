@@ -5,23 +5,26 @@
 		margin-top: 5px;
 		
 		hgroup{
-			font-family: Lora;
-			color: #3F3F51;
+			font-family: $font_lora;
+			color: $font_color;
 
 			> h2{
-				font-size: 28px;
+				font-size: $font_size_titulos;
 				text-align: center;
 			}
 			
 			> img{
-
+				max-width: 100%;
+				height: auto;
+				display: block;
+				margin: auto;
 			}
 
 			.carousel-caption{
 
 				> p{
-					font-size: 17px;
-					color: #FFFFFF;
+					font-size: $font_size_slider_caption;
+					color: $font_color_slider;
 				}
 			}
 

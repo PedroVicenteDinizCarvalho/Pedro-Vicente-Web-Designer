@@ -1,8 +1,9 @@
 #artigos{
 
 	.container-fluid{
-		color: #3F3F51;
-		font-family: Rubik Mono One;
+		color: $font_color;
+		font-family: $font_main;
+		text-align: center;
 
 		.titulo-container{
 			@include make-xs-column(12);
@@ -15,9 +16,8 @@
 				@include make-md-column-offset(0);
 
 				> h2{
-					font-size: 25px;
-					text-align: center;
-					border-top: 3px solid #412C84;
+					font-size: $font_size_titulos;
+					border-top: 3px solid $border_color;
 				}
 			}
 		}
@@ -52,8 +52,7 @@
 				@include make-md-column-offset(2);
 
 				> p{
-					font-size: 13px;
-					text-align: center;
+					font-size: $font_size_paragrafos;
 					padding-top: 30px;
 				}
 			}
@@ -70,9 +69,7 @@
 				@include make-md-column-offset(2);
 
 				> p{
-					font-size: 13px;
-					font-family: Rubik Mono One;
-					text-align: center;
+					font-size: $font_size_paragrafos;
 					padding-top: 30px;
 				}
 			}

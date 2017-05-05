@@ -1,8 +1,8 @@
 #sobremim{
 
 	hgroup{
-		font-family: Lora;
-		color: #3F3F51;
+		font-family: $font_lora;
+		color: $font_color;
 
 		.container{
 
@@ -17,6 +17,9 @@
 					@include make-md-column-offset(0);
 
 					.img-responsive{
+						max-width: 100%;
+						height: auto;
+						display: block;
 						margin: auto;
 					}
 				}

@@ -39,7 +39,7 @@
   padding: 5px 0;
   margin: 2px 0 0; // override default ul
   list-style: none;
-  font-size: $font-size-base;
+  font-size: 15px;
   text-align: left; // Ensures proper alignment if parent has it changed (e.g., modal footer)
   background-color: $dropdown-bg;
   border: 1px solid $dropdown-fallback-border; // IE8 fallback
@@ -91,7 +91,7 @@
     color: $dropdown-link-active-color;
     text-decoration: none;
     outline: 0;
-    background-color: $dropdown-link-active-bg;
+    background-color: #6c8cd5;
   }
 }
 

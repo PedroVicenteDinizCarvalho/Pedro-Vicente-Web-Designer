@@ -5,7 +5,8 @@
 
 		hgroup{
 		text-align: center;
-		color: #3F3F51;
+		color: $font_color;
+		font-family: $font_main;
 
 			.img-container{
 			@include make-xs-column(12);
@@ -15,7 +16,7 @@
 				
 				.img-container__img{
 				@include make-xs-column-offset(0);
-				@include make-sm-column-offset(1);
+				@include make-sm-column-offset(0);
 				@include make-md-column-offset(2);
 					
 					> .img-responsive{
@@ -30,7 +31,7 @@
 			
 			.conteudo{
 			@include make-xs-column(12);
-			@include make-sm-column(5);
+			@include make-sm-column(6);
 			@include make-md-column(6);
 				
 				.conteudo-container__conteudo{
@@ -39,13 +40,11 @@
 				@include make-md-column-offset(1);
 
 					> h2{
-						font-family: Rubik Mono One;
-						font-size: 25px;
+						font-size: $font_size_titulos;
 					}
 
 					> p{
-						font-family: Rubik Mono One;
-						font-size: 13px;
+						font-size: $font_size_paragrafos;
 					}
 				}
 			}

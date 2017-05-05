@@ -41,38 +41,48 @@ body{
 				border: none;
 				margin-bottom: 0px;
 					
-					.navbar-collapse{
-						background-color: #876ED7;
-						border: none;
+					 .container-fluid{
 
-							> ul.navbar-nav{
-							 	
-							 	> li{
-							 		
-							 		> .dropdown-menu{
-							 			background-color: #876ed7;
+						> .navbar-toggle{
+							
 
-							 		}
-								 		
-								 		&.active{
-								 			
-								 			> a{
-								 				background: #6c8cd5;
-								 			}
-								 		}
-								 		
-								 		a{
-								 		color: #06266E;
-										font-size: 19px;
-										font-family: Rubik Mono One;
-										padding-top: 30px;
-										padding-bottom: 0px;
-										&:hover{
-											background: #6c8cd5;
-										}
-								 		}
-							 	}
+							> span{
+
 							}
+						}	
+								.navbar-collapse{
+									background-color: #876ED7;
+									border: none;
+									font-size: 18px;
+									font-family: $font_main;
+									
+										> ul.navbar-nav{
+										 	
+										 	> li{
+										 		
+										 		> .dropdown-menu{
+										 			background-color: #876ed7;
+
+										 		}
+											 		
+											 		&.active{
+											 			
+											 			> a{
+											 				background: #6c8cd5;
+											 			}
+											 		}
+											 		
+											 		a{
+											 		color: #06266E;
+													padding-top: 30px;
+													padding-bottom: 0px;
+													&:hover{
+														background: #6c8cd5;
+													}
+											 		}
+										 	}
+										}
+								}
 					}
 				}
 			}

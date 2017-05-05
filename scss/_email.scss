@@ -1,7 +1,7 @@
 #titulo.container{
 	text-align: center;
-	color: #3F3F51;
-	font-family: Rubik Mono One;
+	color: $font_color;
+	font-family: $font_main;
 
 	.titulo-container{
 		@include make-xs-column(12);
@@ -25,8 +25,8 @@
 	.container{
 
 		form{
-			color: #3F3F51;
-			font-family: Lora;
+			color: $font_color;
+			font-family: $font_lora;
 
 			.nome-container{
 				@include make-xs-column(0);
@@ -143,9 +143,9 @@
 	.container{
 
 		hgroup{
-			font-family: Rubik Mono One;
+			font-family: $font_main;
 			text-align: center;
-			color: #3F3F51;
+			color: $font_color;
 
 			.dicas-container{
 				@include make-xs-column(12);
