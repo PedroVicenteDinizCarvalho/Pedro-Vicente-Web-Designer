@@ -20,14 +20,34 @@
 				margin: auto;
 			}
 
-			.carousel-caption{
+			.caption-container{
+				@include make-xs-column(12);
+				@include make-sm-column(12);
+				@include make-md-column(12);
 
-				> p{
-					font-size: $font_size_slider_caption;
-					color: $font_color_slider;
+				> .caption-container__caption{
+					@include make-xs-column-offset(0);
+					@include make-sm-column-offset(0);
+					@include make-md-column-offset(0);
+
+					> .carousel-caption{
+						font-size: $font_size_slider_caption;
+						color: $font_color_slider;
+
+						> p{
+						
+						}
+					}
 				}
 			}
 
+			#rodape-slider{
+				text-align: center;
+
+				> p{
+					font-size: $font_size_paragrafos;
+				}
+			}
 		}
 	}
 

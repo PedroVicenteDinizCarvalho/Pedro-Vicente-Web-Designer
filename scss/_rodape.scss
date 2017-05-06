@@ -48,33 +48,34 @@ footer{
 				 	}
 
 					.img-container{
-						@include make-xs-column(6);
+						@include make-xs-column(5);
 						@include make-sm-column(2);
-						@include make-md-column(3);
+						@include make-md-column(2);
 
 						.img-container__img{
 						@include make-xs-column-offset(0);
-						@include make-sm-column-offset(5);
-						@include make-md-column-offset(9);
+						@include make-sm-column-offset(0);
+						@include make-md-column-offset(0);
 
 							> img{
 								max-width: 100%;
 								height: auto;
 								display: block;
-								margin: auto;                      
+								margin: auto;  
+
 							}
 						}
 					}
 
 					.h4developer-container{
-						@include make-xs-column(6);
+						@include make-xs-column(7);
 						@include make-sm-column(2);
 						@include make-md-column(3);
 
 						.h4developer-container__developer{
 							@include make-xs-column-offset(0);
 							@include make-sm-column-offset(0);
-							@include make-md-column-offset(6);
+							@include make-md-column-offset(5);
 
 							> h4{
 								text-align: center;
