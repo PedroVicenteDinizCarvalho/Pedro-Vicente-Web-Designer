@@ -1,6 +1,5 @@
 body{
 	> header{
-		padding: 15px;
 		
 		>.content{
 			@include make-row;
@@ -21,9 +20,9 @@ body{
 		}
 	
 	> #navegacao{
-	background-color: #876ED7;
-	border-top: 3px solid #412C84;
-	border-bottom: 3px solid #412C84;
+	background-color: $background_color;
+	border-top: 3px solid $border_color;
+	border-bottom: 3px solid $border_color;
 		
 		> .container{
 		
@@ -37,7 +36,7 @@ body{
 				@include make-sm-column-offset(0);
 				@include make-md-column-offset(3);
 				border-radius: 0px;
-				background-color: #876ED7;
+				background-color: $background_color;
 				border: none;
 				margin-bottom: 0px;
 					
@@ -51,9 +50,9 @@ body{
 							}
 						}	
 								.navbar-collapse{
-									background-color: #876ED7;
+									background-color: $background_color;
 									border: none;
-									font-size: 18px;
+									font-size: $font_size_menu;
 									font-family: $font_main;
 									
 										> ul.navbar-nav{
@@ -61,23 +60,23 @@ body{
 										 	> li{
 										 		
 										 		> .dropdown-menu{
-										 			background-color: #876ed7;
+										 			background-color: $background_color;
 
 										 		}
 											 		
 											 		&.active{
 											 			
 											 			> a{
-											 				background: #6c8cd5;
+											 				background: $background_menu_ative;
 											 			}
 											 		}
 											 		
 											 		a{
-											 		color: #06266E;
+											 		color: $font_color_menu;
 													padding-top: 30px;
 													padding-bottom: 0px;
 													&:hover{
-														background: #6c8cd5;
+														background: $background_menu_ative;
 													}
 											 		}
 										 	}
