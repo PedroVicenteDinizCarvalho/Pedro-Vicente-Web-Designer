@@ -36,16 +36,16 @@ body{
 									@extend .sprite_social;
 									
 									&.behance{
-										@include sprite-define(70px, 50px, -5px, -5px);
+										@include sprite-define(60px, 50px, -5px, -5px);
 									}
 									&.facebook{
-										@include sprite-define(70px, 50px, -145px, -5px);
+										@include sprite-define(60px, 50px, -145px, -5px);
 									}
 									&.google{
-										@include sprite-define(70px, 50px, -285px, -5px);
+										@include sprite-define(60px, 50px, -285px, -5px);
 									}
 									&.linkedin{
-										@include sprite-define(70px, 50px, -425px, -5px);
+										@include sprite-define(60px, 50px, -425px, -5px);
 									}
 								}
 							}
@@ -77,7 +77,6 @@ body{
 					 .container-fluid{
 
 						> .navbar-toggle{
-							
 
 							> span{
 
