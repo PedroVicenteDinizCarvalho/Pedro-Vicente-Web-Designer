@@ -3,26 +3,60 @@ body{
 		
 		>.content{
 			@include make-row;
-				
+
 				>.logo-container{
-				@include make-xs-column(6);
-				@include make-sm-column(5);
-				@include make-md-column(3);
+					@include make-xs-column(8);
+					@include make-sm-column(8);
+					@include make-md-column(8);
 
 					>.logo-container__logo{
-					@include make-xs-column-offset(0);
-					@include make-sm-column-offset(1);
-					@include make-md-column-offset(3);
-					position: relative;
+						@include make-xs-column-offset(0);
+						@include make-sm-column-offset(0);
+						@include make-md-column-offset(0);
 					}
 				}
+
+						> .social__item{
+							@include make-xs-column(3);
+							@include make-sm-column(1);
+							@include make-md-column(1);
+ 
+							> a{
+								@include make-xs-column-offset(4);
+								@include make-sm-column-offset(0);
+								@include make-md-column-offset(0);
+
+								display: block;
+								min-height: 60px;
+								height: 100%;
+								line-height: 60px;
+
+								> span{
+									display: block;
+									@extend .sprite_social;
+									
+									&.behance{
+										@include sprite-define(70px, 50px, -5px, -5px);
+									}
+									&.facebook{
+										@include sprite-define(70px, 50px, -145px, -5px);
+									}
+									&.google{
+										@include sprite-define(70px, 50px, -285px, -5px);
+									}
+									&.linkedin{
+										@include sprite-define(70px, 50px, -425px, -5px);
+									}
+								}
+							}
+						}
 			}
-		}
+	}
 	
-	> #navegacao{
-	background-color: $background_color;
-	border-top: 3px solid $border_color;
-	border-bottom: 3px solid $border_color;
+	#navegacao{
+		background-color: $background_color;
+		border-top: 3px solid $border_color;
+		border-bottom: 3px solid $border_color;
 		
 		> .container{
 		
@@ -32,13 +66,13 @@ body{
 				@include make-md-column(12);
 				
 				.navbar{
-				@include make-xs-column-offset(0);
-				@include make-sm-column-offset(0);
-				@include make-md-column-offset(3);
-				border-radius: 0px;
-				background-color: $background_color;
-				border: none;
-				margin-bottom: 0px;
+					@include make-xs-column-offset(0);
+					@include make-sm-column-offset(0);
+					@include make-md-column-offset(0);
+					border-radius: 0px;
+					background-color: $background_color;
+					border: none;
+					margin-bottom: 0px;
 					
 					 .container-fluid{
 
@@ -77,6 +111,7 @@ body{
 													padding-bottom: 0px;
 													&:hover{
 														background: $background_menu_ative;
+														transition: all 0.5s linear;
 													}
 											 		}
 										 	}
@@ -85,8 +120,6 @@ body{
 					}
 				}
 			}
-
 		}
-
 	}
 }

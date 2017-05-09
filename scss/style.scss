@@ -1,10 +1,11 @@
 @import "vendors/bootstrap/bootstrap/variables";
 @import "vendors/bootstrap/bootstrap/mixins";
 @import "variables";
+@import "body";
+@import "mixins";
 @import "header";
 @import "jumbotron";
-@import "rodape";
-@import "body";
+@import "rodape"; 
 @import "conteudo-centro";
 @import "slider";
 
