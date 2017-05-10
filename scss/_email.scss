@@ -21,7 +21,7 @@
 }
 
 #email{
-	
+
 	.container{
 
 		form{
@@ -29,12 +29,12 @@
 			font-family: $font_lora;
 
 			.nome-container{
-				@include make-xs-column(0);
-				@include make-sm-column(0);
+				@include make-xs-column(12);
+				@include make-sm-column(6);
 				@include make-md-column(3);
 
 				.nome-container__nome{
-					@include make-xs-column-offset(0);
+					@include make-xs-column-offset(1);
 					@include make-sm-column-offset(0);
 					@include make-md-column-offset(0);
 
@@ -52,12 +52,12 @@
 			}
 
 			.fone-container{
-				@include make-xs-column(0);
-				@include make-sm-column(0);
+				@include make-xs-column(12);
+				@include make-sm-column(6);
 				@include make-md-column(3);
 
 				.fone-container__fone{
-					@include make-xs-column-offset(0);
+					@include make-xs-column-offset(1);
 					@include make-sm-column-offset(0);
 					@include make-md-column-offset(0);
 
@@ -75,12 +75,12 @@
 			}
 
 			.email-container{
-				@include make-xs-column(0);
-				@include make-sm-column(0);
+				@include make-xs-column(12);
+				@include make-sm-column(6);
 				@include make-md-column(3);
 
 				.email-container__email{
-					@include make-xs-column-offset(0);
+					@include make-xs-column-offset(1);
 					@include make-sm-column-offset(0);
 					@include make-md-column-offset(0);
 
@@ -98,12 +98,12 @@
 			}
 
 			.text-container{
-				@include make-xs-column(0);
-				@include make-sm-column(0);
+				@include make-xs-column(12);
+				@include make-sm-column(6);
 				@include make-md-column(3);
 
 				.text-container__text{
-					@include make-xs-column-offset(0);
+					@include make-xs-column-offset(1);
 					@include make-sm-column-offset(0);
 					@include make-md-column-offset(0);
 
@@ -117,14 +117,14 @@
 			}
 			
 			.enviar-container{
-				@include make-xs-column(0);
-				@include make-sm-column(0);
-				@include make-md-column(11);
+				@include make-xs-column(1);
+				@include make-sm-column(1);
+				@include make-md-column(12);
 
 				.enviar-container__enviar{
 					@include make-xs-column-offset(0);
 					@include make-sm-column-offset(0);
-					@include make-md-column-offset(12);
+					@include make-md-column-offset(11);
 
 					.submit{
 
