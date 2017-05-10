@@ -11,8 +11,9 @@ footer{
 	 			@include make-xs-column(0);
 	 			@include make-sm-column(1);
 	 			@include make-md-column(1);
+	 			border-radius: 4px;
 
-	 			> .celular{	
+	 			> .celular, .email{	
 	 				margin-top: 5px;
 		 			a{
 		 							
@@ -21,7 +22,13 @@ footer{
 							height: auto;
 							display: block;
 							margin: auto; 
+							border-radius: 4px;
+							transition: all 0.5s linear;
 		 				}
+		 				&:hover > .img-responsive{
+	 						transition: position 0.5s linear;
+	 						box-shadow: 5px 0px 9px;
+	 					}
 	 				}
 	 			}
 	 						
@@ -32,8 +39,18 @@ footer{
 						height: auto;
 						display: block;
 						margin: auto; 
+						border-radius: 4px;
+						transition: all 0.5s linear;
+	 				}
+	 				&:hover > .img-responsive{
+	 					transition: position 0.5s linear;
+	 					box-shadow: 5px 0px 9px;
 	 				}
 	 			}
+	 		}
+	 		&:hover > .contato__item{
+	 			top: 10px;
+	 			left: 20px;
 	 		}
 
 			.celular-container{

@@ -41,9 +41,15 @@
 					.nome{
 
 						> #nomeid{
-
+							background-color: $background_color;
+							border-radius: 4px;
+							transition: all 0.5s linear;
 						}
-
+						input:hover, #nomeid:hover, input:focus, #nomeid:focus {
+							background-color: $background_menu_ative;
+							transition: all 0.2s linear;
+							box-shadow: 5px 0px 9px;
+						}
 						> label{
 							
 						}
@@ -64,7 +70,14 @@
 					.fone{
 
 						> #foneid{
-
+							background-color: $background_color;
+							border-radius: 4px;
+							transition: all 0.5s linear;
+						}
+						input:hover, #foneid:hover, input:focus, #foneid:focus {
+							background-color: $background_menu_ative;
+							transition: all 0.2s linear;
+							box-shadow: 5px 0px 9px;
 						}
 
 						> label{
@@ -87,7 +100,14 @@
 					.email{
 
 						> #emailid{
-
+							background-color: $background_color;
+							border-radius: 4px;
+							transition: all 0.5s linear;
+						}
+						input:hover, #emailid:hover, input:focus, #emailid:focus {
+							background-color: $background_menu_ative;
+							transition: all 0.2s linear;
+							box-shadow: 5px 0px 9px;
 						}
 
 						> label{
@@ -109,21 +129,30 @@
 
 					.text{
 						
-						textarea{
-
+						> textarea{
+							background-color: $background_color;
+							border-radius: 4px;
+							transition: all 0.5s linear;
+						}
+						input:hover, textarea:hover, input:focus, textarea:focus {
+							background-color: $background_menu_ative;
+							width: 200px;
+							height: 150px;
+							transition: all 0.5s linear;
+							box-shadow: 5px 0px 9px;
 						}
 					}
 				}
 			}
 			
 			.enviar-container{
-				@include make-xs-column(1);
-				@include make-sm-column(1);
+				@include make-xs-column(7);
+				@include make-sm-column(7);
 				@include make-md-column(12);
 
 				.enviar-container__enviar{
-					@include make-xs-column-offset(0);
-					@include make-sm-column-offset(0);
+					@include make-xs-column-offset(12);
+					@include make-sm-column-offset(11);
 					@include make-md-column-offset(11);
 
 					.submit{
