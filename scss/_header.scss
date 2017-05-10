@@ -34,6 +34,7 @@ body{
 								> span{
 									display: block;
 									@extend .sprite_social;
+									transition: all 0.5s linear;
 									
 									&.behance{
 										@include sprite-define(60px, 50px, -5px, -5px);
@@ -48,6 +49,23 @@ body{
 										@include sprite-define(60px, 50px, -425px, -5px);
 									}
 								}
+
+									&:hover > span{
+										transition: all 0.0s linear;
+
+										&.behance{
+										@include sprite-define(60px, 50px, -75px, -5px);
+										}
+										&.facebook{
+											@include sprite-define(60px, 50px, -215px, -5px);
+										}
+										&.google{
+											@include sprite-define(60px, 50px, -355px, -5px);
+										}
+										&.linkedin{
+											@include sprite-define(60px, 50px, -495px, -5px);
+										}
+									}
 							}
 						}
 			}
@@ -108,6 +126,7 @@ body{
 											 		color: $font_color_menu;
 													padding-top: 30px;
 													padding-bottom: 0px;
+													transition: all 0.5s linear;
 													&:hover{
 														background: $background_menu_ative;
 														transition: all 0.5s linear;

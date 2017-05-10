@@ -19,12 +19,14 @@
 				@include make-sm-column-offset(0);
 				@include make-md-column-offset(2);
 					
-					> .img-responsive{
-					max-width: 100%;
-					height: auto;
-					display: block;
-					margin: auto;
-					
+					a{
+						> .img-responsive{
+						max-width: 100%;
+						height: auto;
+						display: block;
+						margin: auto;
+						
+						}
 					}
 				}
 			}
@@ -45,6 +47,7 @@
 
 					> p{
 						font-size: $font_size_paragrafos;
+						padding-top: 25px;
 					}
 				}
 			}
