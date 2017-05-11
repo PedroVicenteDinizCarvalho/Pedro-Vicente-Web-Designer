@@ -29,7 +29,7 @@ body{
 								display: block;
 								min-height: 60px;
 								height: 100%;
-								line-height: 60px;
+				
 
 								> span{
 									display: block;
@@ -56,20 +56,16 @@ body{
 
 										&.behance{
 										@include sprite-define(60px, 50px, -75px, -5px);
-											box-shadow: 5px 0px 1px;
 
 										}
 										&.facebook{
 											@include sprite-define(60px, 50px, -215px, -5px);
-											box-shadow: 5px 0px 1px;
 										}
 										&.google{
 											@include sprite-define(60px, 50px, -355px, -5px);
-											box-shadow: 5px 0px 1px;
 										}
 										&.linkedin{
 											@include sprite-define(60px, 50px, -495px, -5px);
-											box-shadow: 5px 0px 1px;
 										}
 									}
 							}
@@ -110,7 +106,7 @@ body{
 									background-color: $background_color;
 									border: none;
 									font-size: $font_size_menu;
-									font-family: $font_main;
+									font-family: $font_lora;
 									
 										> ul.navbar-nav{
 										 	
@@ -130,8 +126,6 @@ body{
 											 		
 											 		a{
 											 		color: $font_color_menu;
-													padding-top: 30px;
-													padding-bottom: 0px;
 													transition: all 0.5s linear;
 													&:hover{
 														background: $background_menu_ative;
