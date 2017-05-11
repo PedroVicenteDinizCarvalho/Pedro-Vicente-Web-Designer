@@ -4,48 +4,50 @@
 	.carousel-inner{
 		margin-top: 5px;
 		
-		hgroup{
-			font-family: $font_lora;
-			color: $font_color;
+		a{
+			hgroup{
+				font-family: $font_lora;
+				color: $font_color;
 
-			> h2{
-				font-size: $font_size_titulos;
-				text-align: center;
-			}
-			
-			> img{
-				max-width: 100%;
-				height: auto;
-				display: block;
-				margin: auto;
-			}
+				> h2{
+					font-size: $font_size_titulos;
+					text-align: center;
+				}
+				
+				> img{
+					max-width: 100%;
+					height: auto;
+					display: block;
+					margin: auto;
+				}
 
-			.caption-container{
-				@include make-xs-column(12);
-				@include make-sm-column(12);
-				@include make-md-column(12);
+				.caption-container{
+					@include make-xs-column(12);
+					@include make-sm-column(12);
+					@include make-md-column(12);
 
-				> .caption-container__caption{
-					@include make-xs-column-offset(0);
-					@include make-sm-column-offset(0);
-					@include make-md-column-offset(0);
+					> .caption-container__caption{
+						@include make-xs-column-offset(0);
+						@include make-sm-column-offset(0);
+						@include make-md-column-offset(0);
 
-					> .carousel-caption{
-						font-size: $font_size_slider_caption;
-						color: $font_color_slider;
+						> .carousel-caption{
+							font-size: $font_size_slider_caption;
+							color: $font_color_slider;
 
-						> p{
-						
+							> p{
+							
+							}
 						}
 					}
 				}
-			}
 
-			#rodape-slider{
-				text-align: center;
+				#rodape-slider{
+					text-align: center;
 
-				> p{
-					font-size: $font_size_paragrafos;
+					> p{
+						font-size: $font_size_paragrafos;
+					}
 				}
 			}
 		}

@@ -25,7 +25,6 @@
 						height: auto;
 						display: block;
 						margin: auto;
-						
 						}
 					}
 				}
@@ -40,9 +39,10 @@
 				@include make-xs-column-offset(0);
 				@include make-sm-column-offset(0);
 				@include make-md-column-offset(1);
-
-					> h2{
-						font-size: $font_size_titulos;
+					a{
+						> h2{
+							font-size: $font_size_titulos;
+						}
 					}
 
 					> p{
