@@ -5,7 +5,7 @@ body{
 			@include make-row;
 
 				>.logo-container{
-					@include make-xs-column(8);
+					@include make-xs-column(9);
 					@include make-sm-column(8);
 					@include make-md-column(8);
 
@@ -22,7 +22,7 @@ body{
 							@include make-md-column(1);
  
 							> a{
-								@include make-xs-column-offset(4);
+								@include make-xs-column-offset(0);
 								@include make-sm-column-offset(0);
 								@include make-md-column-offset(0);
 
@@ -33,6 +33,7 @@ body{
 
 								> span{
 									display: block;
+									border-radius: 30px;
 									@extend .sprite_social;
 									transition: all 0.5s linear;
 									
@@ -55,15 +56,20 @@ body{
 
 										&.behance{
 										@include sprite-define(60px, 50px, -75px, -5px);
+											box-shadow: 5px 0px 1px;
+
 										}
 										&.facebook{
 											@include sprite-define(60px, 50px, -215px, -5px);
+											box-shadow: 5px 0px 1px;
 										}
 										&.google{
 											@include sprite-define(60px, 50px, -355px, -5px);
+											box-shadow: 5px 0px 1px;
 										}
 										&.linkedin{
 											@include sprite-define(60px, 50px, -495px, -5px);
+											box-shadow: 5px 0px 1px;
 										}
 									}
 							}

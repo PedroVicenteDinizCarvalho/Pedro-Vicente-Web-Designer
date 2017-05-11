@@ -26,7 +26,7 @@ footer{
 							transition: all 0.5s linear;
 		 				}
 		 				&:hover > .img-responsive{
-	 						transition: position 0.5s linear;
+	 						transition: all 0.5s linear;
 	 						box-shadow: 5px 0px 9px;
 	 					}
 	 				}
@@ -43,14 +43,14 @@ footer{
 						transition: all 0.5s linear;
 	 				}
 	 				&:hover > .img-responsive{
-	 					transition: position 0.5s linear;
+	 					transition: all 0.5s linear;
 	 					box-shadow: 5px 0px 9px;
 	 				}
 	 			}
 	 		}
 	 		&:hover > .contato__item{
-	 			top: 10px;
-	 			left: 20px;
+	 			transition: all 0.5s linear;
+	 			margin-top: 10px;
 	 		}
 
 			.celular-container{
