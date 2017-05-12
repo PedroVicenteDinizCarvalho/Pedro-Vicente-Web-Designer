@@ -53,10 +53,10 @@ body{
 
 									&:hover > span{
 										transition: all 0.0s linear;
-
+										
 										&.behance{
 										@include sprite-define(60px, 50px, -75px, -5px);
-
+  
 										}
 										&.facebook{
 											@include sprite-define(60px, 50px, -215px, -5px);

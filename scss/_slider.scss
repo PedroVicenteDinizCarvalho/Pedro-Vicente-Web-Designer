@@ -14,11 +14,19 @@
 					text-align: center;
 				}
 				
+
 				> img{
+				transition: all 0.4s linear;
 					max-width: 100%;
 					height: auto;
 					display: block;
 					margin: auto;
+					opacity:0.8;
+				}
+				&:hover > img
+				{
+				 transition: all 0.4s linear;
+       			 opacity:1;
 				}
 
 				.caption-container{
@@ -37,7 +45,7 @@
 
 							> p{
 							
-							}
+							} 
 						}
 					}
 				}

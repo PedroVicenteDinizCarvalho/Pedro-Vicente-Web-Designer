@@ -19,6 +19,7 @@
 					> h2{
 						font-size: $font_size_titulos;
 						border-top: 3px solid $border_color;
+						margin-top: 10px;
 					}
 				}
 			}
@@ -36,10 +37,17 @@
 
 				a{
 					> .img-responsive{
+					transition: all 0.2s linear;
 						max-width: 100%;
 						height: auto;
 						display: block;
 						margin: auto;
+					}
+					.img-left-container:hover, img-left-container__img:hover, img:hover{
+						transition: all 0.2s linear;
+						-webkit-transform: scale(1.1);
+						-ms-transform: scale(1.1);
+						transform: scale(1.1);
 					}
 				}
 			}
@@ -90,12 +98,18 @@
 				@include make-md-column-offset(2);
 
 				a{
-				transition: all 0.4s linear;
 					> .img-responsive{
+					transition: all 0.2s linear;
 						max-width: 100%;
 						height: auto;
 						display: block;
 						margin: auto;
+					}
+					.img-right-container:hover, img-right-container__img:hover, img:hover{
+						transition: all 0.2s linear;
+						-webkit-transform: scale(1.1);
+						-ms-transform: scale(1.1);
+						transform: scale(1.1);
 					}
 				}
 			}

@@ -17,10 +17,17 @@
 					@include make-md-column-offset(0);
 
 					.img-responsive{
+					transition: all 0.2s linear;
 						max-width: 100%;
 						height: auto;
 						display: block;
 						margin: auto;
+					}
+					.img-container:hover, img-container__img:hover, img:hover{
+						transition: all 0.2s linear;
+						-webkit-transform: scale(1.1);
+						-ms-transform: scale(1.1);
+						transform: scale(1.1);
 					}
 				}
 			}
