@@ -15,9 +15,11 @@
 				@include make-sm-column-offset(0);
 				@include make-md-column-offset(0);
 
-				> h2{
-					font-size: $font_size_titulos;
-					border-top: 3px solid $border_color;
+				a{
+					> h2{
+						font-size: $font_size_titulos;
+						border-top: 3px solid $border_color;
+					}
 				}
 			}
 		}
@@ -30,13 +32,15 @@
 			.img-left-container__img{
 				@include make-xs-column-offset(0);
 				@include make-sm-column-offset(0);
-				@include make-md-column-offset(3);
+				@include make-md-column-offset(1);
 
-				> .img-responsive{
-					max-width: 100%;
-					height: auto;
-					display: block;
-					margin: auto;
+				a{
+					> .img-responsive{
+						max-width: 100%;
+						height: auto;
+						display: block;
+						margin: auto;
+					}
 				}
 			}
 		}
@@ -85,12 +89,15 @@
 				@include make-sm-column-offset(0);
 				@include make-md-column-offset(2);
 
+				a{
+				transition: all 0.4s linear;
 					> .img-responsive{
 						max-width: 100%;
 						height: auto;
 						display: block;
 						margin: auto;
 					}
+				}
 			}
 		}
 	}
