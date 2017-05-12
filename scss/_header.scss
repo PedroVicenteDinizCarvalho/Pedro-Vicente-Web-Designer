@@ -75,11 +75,11 @@ body{
 	
 	#navegacao{
 		background-color: $background_color;
-		border-top: 3px solid $border_color;
-		border-bottom: 3px solid $border_color;
 		
 		> .container{
-		
+			transition: all 0.4s linear;
+			border-radius: 4px;
+			
 			> #navegacao__content{
 				@include make-xs-column(12);
 				@include make-sm-column(12);
@@ -139,5 +139,9 @@ body{
 				}
 			}
 		}
+		&:hover > .container{
+		transition: all 0.4s linear;
+		box-shadow: 5px 10px 15px;
+	}
 	}
 }
