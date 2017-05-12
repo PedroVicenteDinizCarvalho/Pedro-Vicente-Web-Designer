@@ -12,7 +12,8 @@ footer{
 	 			@include make-sm-column(1);
 	 			@include make-md-column(1);
 	 			border-radius: 4px;
-
+	 			transition: all 0.5s linear;
+	 			
 	 			> .celular, .email{	
 	 				margin-top: 5px;
 		 			a{

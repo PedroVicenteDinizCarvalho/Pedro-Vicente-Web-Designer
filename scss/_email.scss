@@ -132,13 +132,13 @@
 						> textarea{
 							background-color: $background_color;
 							border-radius: 4px;
-							transition: all 0.5s linear;
+							transition:0.5s linear;
 						}
 						input:hover, textarea:hover, input:focus, textarea:focus {
+							transition: 0.5s linear;
 							background-color: $background_menu_ative;
-							width: 200px;
-							height: 150px;
-							transition: all 0.5s linear;
+							min-width: 200px;
+							min-height: 150px;
 							box-shadow: 5px 0px 9px;
 						}
 					}
