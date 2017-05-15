@@ -2,7 +2,7 @@ footer{
 
 	 .navbar{
 	 	background-color: $background_color;
-	 	border-radius: 4px;
+	 
 
 	 	.container-fluid{
 	 		font-family: $font_lora;
@@ -67,7 +67,6 @@ footer{
 					> h3{
 						font-size: $font_size_rodape;
 						margin: 0px;
-						padding: 0px;
 					}
 				}
 			}
@@ -85,7 +84,6 @@ footer{
 					> h3{
 						font-size: $font_size_rodape;
 						margin: 0px;
-						padding: 0px;
 					} 
 				}
 			}
@@ -105,7 +103,6 @@ footer{
 							font-size: $font_size_rodape;
 							text-align: center;
 							margin: 0px;
-					 		padding: 0px;
 						}
 					}
 				}
