@@ -1,6 +1,12 @@
 body{
 	padding-bottom: 150px;
 }
+#background_header{
+	background: url('../images/bannertop.jpg') no-repeat;
+	background-position: top center;
+	background-size:  cover;
+	background-attachment: fixed;
+}
 
 /* ---------------- Barra de rolagem Google Chrome---------------- */
 ::-webkit-scrollbar {

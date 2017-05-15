@@ -1,6 +1,5 @@
-body{
-	> header{
-		
+ header{
+
 		>.content{
 			@include make-row;
 
@@ -8,6 +7,7 @@ body{
 					@include make-xs-column(9);
 					@include make-sm-column(8);
 					@include make-md-column(8);
+					
 
 					>.logo-container__logo{
 						@include make-xs-column-offset(0);
@@ -74,12 +74,13 @@ body{
 	}
 	
 	#navegacao{
-		background-color: $background_color;
+		background-color: transparent;
 		
 		> .container{
 			transition: all 0.4s linear;
 			border-radius: 4px;
-			
+			background-color: $background_color;
+
 			> #navegacao__content{
 				@include make-xs-column(12);
 				@include make-sm-column(12);
@@ -89,9 +90,8 @@ body{
 					@include make-xs-column-offset(0);
 					@include make-sm-column-offset(0);
 					@include make-md-column-offset(0);
-					border-radius: 0px;
-					background-color: $background_color;
 					border: none;
+					background-color: transparent;
 					margin-bottom: 0px;
 					
 					 .container-fluid{
@@ -103,7 +103,6 @@ body{
 							}
 						}	
 								.navbar-collapse{
-									background-color: $background_color;
 									border: none;
 									font-size: $font_size_menu;
 									font-family: $font_lora;
@@ -121,14 +120,17 @@ body{
 											 			
 											 			> a{
 											 				background: $background_menu_ative;
+											 				border-radius: 4px;
 											 			}
 											 		}
 											 		
 											 		a{
 											 		color: $font_color_menu;
+											 		border-radius: 4px;
 													transition: all 0.5s linear;
 													&:hover{
 														background: $background_menu_ative;
+														border-radius: 4px;
 														transition: all 0.5s linear;
 													}
 											 		}
@@ -142,6 +144,6 @@ body{
 		&:hover > .container{
 		transition: all 0.4s linear;
 		box-shadow: 5px 10px 15px;
+		border-radius: 4px;
+		}
 	}
-	}
-} 
