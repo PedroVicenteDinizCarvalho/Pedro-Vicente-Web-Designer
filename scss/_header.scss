@@ -75,7 +75,9 @@
 	
 	#navegacao{
 		background-color: transparent;
-		
+		font-size: $font_size_menu;
+		font-family: $font_lora;
+
 		> .container{
 			transition: all 0.4s linear;
 			border-radius: 4px;
@@ -104,16 +106,14 @@
 						}	
 								.navbar-collapse{
 									border: none;
-									font-size: $font_size_menu;
-									font-family: $font_lora;
 									
 										> ul.navbar-nav{
-										 	
+							
 										 	> li{
 										 		
 										 		> .dropdown-menu{
 										 			background-color: $background_color;
-
+										 			font-size: $font_size_menu;
 										 		}
 											 		
 											 		&.active{

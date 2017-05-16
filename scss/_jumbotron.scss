@@ -1,5 +1,9 @@
 #banner.jumbotron{
-	background-color: $background_color;
+	background-image: url('../images/bannertop.jpg');
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size:  cover;
+	background-attachment: fixed;
 	margin-top: 5px;
 	margin-bottom: 0px;
 
@@ -7,46 +11,23 @@
 		
 			
 			hgroup{
+				color: $font_color_slider;
 				position: relative;
-				color: $font_color;
 				font-family: $font_main;
 				text-align: center;
-
-				.img-container{
-					@include make-xs-column(12);
-					@include make-sm-column(6);
-					@include make-md-column(5);
-
-					 .img-container__img{
-						@include make-xs-column-offset(0);
-						@include make-sm-column-offset(0);
-						@include make-md-column-offset(0);
-						
-						a{
-							> img{
-							transition: all 0.2s linear;
-								max-width: 100%;
-								height: auto;
-								display: block;
-								margin: auto;
-							}
-							.img-container:hover, img-container__img:hover, img:hover{
-								transition: all 0.2s linear;
-								-webkit-transform: scale(1.1);
-								-ms-transform: scale(1.1);
-							     transform: scale(1.1);
-							}
-						}
-					}
-				}
 					
 				.conteudo{
 			        @include make-xs-column(12);
-					@include make-sm-column(6);
-					@include make-md-column(7);
+					@include make-sm-column(12);
+					@include make-md-column(12);
 						a{
 							> h2{
 								font-size: $font_size_titulos;
+								color: $font_color_slider;
+							}
+							&:hover > h2{
+								transition: all 0.4s linear;
+								color:  $font_color_menu;
 							}
 						}
 							
@@ -54,6 +35,7 @@
 								font-size: $font_size_paragrafos;
 								padding-top: 25px;
 							} 
+						
 				}
 			}
 		}
