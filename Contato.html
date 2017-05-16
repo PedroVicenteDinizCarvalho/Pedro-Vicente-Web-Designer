@@ -112,10 +112,11 @@
 	</div>
 
 <!-- formulário email -->
-
 	<section id="email">
 		<div class="container" role="main">
-			<form>
+			<form  name="form" method="post" action="#">
+			<input type="hidden" name="recipient" value="pedrozwpiper@gmail.com">
+			<input type="hidden" name="redirect" value="index.html">
 				<div class="nome-container">
 					<div class="nome-container__nome">
 						<p class="nome">
@@ -137,7 +138,7 @@
 	       		<div class="email-container">
 	       			<div class="email-container__email">
 						<p class="email">
-							<input type="email" id="emailid" placeholder="fulano@mail.com" name="email" />
+							<input type="email" id="emailid" placeholder="fulano@mail.com" name="email" required="required" />
 							<label for="email">Email</label>
 						</p>
 					</div>
