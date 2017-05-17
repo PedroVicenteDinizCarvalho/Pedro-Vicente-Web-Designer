@@ -19,10 +19,12 @@
 		}
 	}
 }
+
 .email-container{
 	@include make-xs-column(6);
 	@include make-sm-column(6);
 	@include make-md-column(6);
+		
 		.email-container__email{
 			@include make-xs-column-offset(0);
 			@include make-sm-column-offset(0);

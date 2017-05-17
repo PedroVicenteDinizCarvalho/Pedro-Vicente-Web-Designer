@@ -1,4 +1,4 @@
- header{
+header{
 
 		>.content{
 			@include make-row;
@@ -8,7 +8,6 @@
 					@include make-sm-column(8);
 					@include make-md-column(8);
 					
-
 					>.logo-container__logo{
 						@include make-xs-column-offset(0);
 						@include make-sm-column-offset(0);
@@ -71,12 +70,12 @@
 							}
 						}
 		}
-	}
+}
 	
 	#navegacao{
 		background-color: transparent;
 		font-size: $font_size_menu;
-		font-family: $font_lora;
+		font-family: $font_main;
 
 		> .container{
 			transition: all 0.4s linear;
@@ -113,6 +112,7 @@
 										 		
 										 		> .dropdown-menu{
 										 			background-color: $background_color;
+										 			padding: 10px;
 										 			font-size: $font_size_menu;
 										 		}
 											 		
