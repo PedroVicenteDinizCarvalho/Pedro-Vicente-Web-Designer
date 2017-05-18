@@ -12,6 +12,8 @@ header{
 						@include make-xs-column-offset(0);
 						@include make-sm-column-offset(0);
 						@include make-md-column-offset(0);
+
+						transition: all 1.0s linear;
 					}
 				}
 
