@@ -75,70 +75,81 @@ header{
 }
 	
 	#navegacao{
-		background-color: transparent;
-		font-size: $font_size_menu;
-		font-family: $font_main;
+	font-family: $font_main;
+	font-size: $font_size_menu;
 
 		> .container{
 			transition: all 0.4s linear;
 			border-radius: 4px;
 			background-color: $background_color;
 
-			> #navegacao__content{
+			 #navegacao__content{
 				@include make-xs-column(12);
 				@include make-sm-column(12);
 				@include make-md-column(12);
-				
-				.navbar{
+
+				.navbar-default{
 					@include make-xs-column-offset(0);
 					@include make-sm-column-offset(0);
 					@include make-md-column-offset(0);
 					border: none;
 					background-color: transparent;
-					margin-bottom: 0px;
-					
-					 .container-fluid{
+					margin-bottom: 0px; 
+			
+					 > .container-fluid{
+					 	> a{
+					 		> h1{
+							font-size: $font_size_titulo_bar; 
+							color: $font_color;
+						}
+					 	}
 
-						> .navbar-toggle{
+						> ul.nav{
+							@include make-xs-column(12);
+							@include make-sm-column(3);
+							@include make-md-column(2);
+							padding: 0px;
+							margin-top: 8px;
+							> li.dropdown{ 
 
-							> span{
-
-							}
-						}	
-								.navbar-collapse{
-									border: none;
-									
-										> ul.navbar-nav{
+								> a.dropdown-toggle{
+									color: $font_color_menu;
 							
+									> .caret{
+
+									}
+								} 
+								
+										 ul.dropdown-menu{
+											background-color: $background_color;
+										 	
 										 	> li{
-										 		
-										 		> .dropdown-menu{
-										 			background-color: $background_color;
-										 			padding: 10px;
-										 			font-size: $font_size_menu;
-										 		}
-											 		
-											 		&.active{
-											 			
-											 			> a{
+										 		padding: 7px;
+												font-size: $font_size_menu;
+												color: $font_color_menu;
+
+											 		> &.active{
+											 			a{
 											 				background: $background_menu_ative;
 											 				border-radius: 4px;
 											 			}
 											 		}
 											 		
-											 		a{
+											 		> a{
 											 		color: $font_color_menu;
 											 		border-radius: 4px;
 													transition: all 0.5s linear;
 													&:hover{
 														background: $background_menu_ative;
 														border-radius: 4px;
+														box-shadow: 5px 10px 15px;
 														transition: all 0.5s linear;
 													}
 											 		}
 										 	}
 										}
-								}
+							}
+						}
 					}
 				}
 			}

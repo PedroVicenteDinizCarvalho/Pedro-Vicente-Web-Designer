@@ -59,7 +59,7 @@
   &.in {
     overflow-y: auto;
   }
-
+ 
   @media (min-width: $grid-float-breakpoint) {
     width: auto;
     border-top: 0;
@@ -458,14 +458,6 @@
   // Dropdown menu items
   .navbar-nav {
     // Remove background color from open dropdown
-    > .open > a {
-      &,
-      &:hover,
-      &:focus {
-        background-color: #6c8cd5;
-        color: $navbar-default-link-active-color;
-      }
-    }
 
     @media (max-width: $grid-float-breakpoint-max) {
       // Dropdowns get custom display when collapsed
