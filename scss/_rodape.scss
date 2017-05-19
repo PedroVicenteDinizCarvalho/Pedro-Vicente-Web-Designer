@@ -104,6 +104,10 @@ footer{
 							text-align: center;
 							margin: 0px;
 						}
+						&:hover{
+						transition: all 0.4s linear;
+						color: $font_color_menu;
+						}
 					}
 				}
 			}

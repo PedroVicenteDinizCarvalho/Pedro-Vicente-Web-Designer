@@ -22,12 +22,13 @@
 					@include make-md-column(12);
 						a{
 							> h2{
+							transition: all 0.4s linear;
 								font-size: $font_size_titulos;
 								color: $font_color_slider;
 							}
 							&:hover > h2{
 								transition: all 0.4s linear;
-								color:  $font_color_menu;
+								color:  $font_color_hover;
 							}
 						}
 							
