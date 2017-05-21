@@ -1,0 +1,88 @@
+#Sobre{
+    margin: 0px;
+background-image: url('../images/bannerteclado.jpg');
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size:  cover;
+	background-attachment: fixed;
+
+	> .container-fluid{
+
+		> hgroup{
+			color: $font_color_slider;
+			position: relative;
+			font-family: $font_main;
+			text-align: center;
+
+			.subtitulo{
+			@include make-xs-column(12);
+			@include make-sm-column(12);
+			@include make-md-column(12);
+				> h2{
+		
+				}
+				
+			}
+
+			.eu-container{
+			@include make-xs-column(12);
+			@include make-sm-column(12);
+			@include make-md-column(12);
+				> .eu-container__eu{
+
+					>a{
+						> .img-responsive{
+							transition: all 0.2s linear;
+							max-width: 100%;
+							height: auto;
+							display: block;
+							margin: auto;
+						}
+						.eu-container:hover, eu-container__eu:hover, img:hover{
+									transition: all 0.2s linear;
+									-webkit-transform: scale(1.1);
+									-ms-transform: scale(1.1);
+								     transform: scale(1.1);
+						}
+					}
+				}
+			}
+
+			.img-container{
+			@include make-xs-column(0);
+			@include make-sm-column(3);
+			@include make-md-column(3);
+				
+				> .img-container__img{
+				@include make-xs-column-offset(0);
+				@include make-sm-column-offset(0);
+				@include make-md-column-offset(0);
+					a{
+						> .img-responsive{
+							transition: all 0.2s linear;
+							max-width: 100%;
+							height: auto;
+							display: block;
+							margin: auto;
+						}
+						.img-container:hover, img-container__img:hover, img:hover{
+									transition: all 0.2s linear;
+									-webkit-transform: scale(1.1);
+									-ms-transform: scale(1.1);
+								     transform: scale(1.1);
+						}
+					}
+				}
+			}
+			.p-container{
+			@include make-xs-column(12);
+			@include make-sm-column(12);
+			@include make-md-column(12);
+				> p{
+				font-size: $font_size_paragrafos;
+				padding-top: 25px;
+				}
+			}			
+		}
+	}
+}
