@@ -1,5 +1,16 @@
 #sobremim{
  margin-top: 5px;
+	 	> .titulo{
+	 	 > h2{
+	 	 @include make-xs-column(12);
+	 	 @include make-sm-column(12);
+	 	 @include make-md-column(12);
+	 	 text-align: center;
+	 	 font-family: $font_main;
+	 	 font-size: $font_size_titulos;
+	 	 color: $font_color;
+	 	 }
+	 	}
 	hgroup{
 		font-family: $font_main;
 		color: $font_color;
