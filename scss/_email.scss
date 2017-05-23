@@ -59,3 +59,52 @@
 		}
 	}
 }
+
+#Eu-contato{
+	hgroup{
+	font-family: $font_main;
+	text-align: center;
+	color: $font_color;
+
+		.titulo_container{
+		@include make-xs-column(12);
+		@include make-sm-column(12);
+		@include make-md-column(12);
+			> a{
+				> h2{
+				font-size: $font_size_titulos;
+				}
+			}
+		}
+
+		.eu-container{
+				@include make-xs-column(12);
+				@include make-sm-column(12);
+				@include make-md-column(12);
+					> .eu-container__eu{
+
+						>a{
+							> .img-responsive{
+								transition: all 0.2s linear;
+								max-width: 100%;
+								height: auto;
+								display: block;
+								margin: auto;
+							}
+							.eu-container:hover, eu-container__eu:hover, img:hover{
+										transition: all 0.2s linear;
+										-webkit-transform: scale(1.1);
+										-ms-transform: scale(1.1);
+									     transform: scale(1.1);
+							}
+						}
+					}
+				}
+
+		.paragrafo_container{
+			> p{
+				font-size: $font_size_paragrafos;
+			}
+		}
+	}	
+}

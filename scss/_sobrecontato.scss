@@ -1,0 +1,39 @@
+#RedesSociais{
+	> .container-fluid{
+		hgroup{
+			> .titulo_container{
+	 	 	@include make-xs-column(12);
+	 		 @include make-sm-column(12);
+	 		 @include make-md-column(12);	
+				>h3{
+				font-family: $font_main;
+				color: $font_color;
+				text-align: center;
+				font-size: $font_size_titulos; 
+				}
+			}
+
+			> .img_container{
+			@include make-xs-column(6);
+	 	 	@include make-sm-column(3);
+	 		@include make-md-column(3);
+				 a{
+					 .img-responsive{
+					transition: all 0.2s linear;
+						max-width: 100%;
+						height: auto;
+						display: block;
+						margin: auto;
+						padding-top: 10px;
+					}
+					.img-container:hover, img-container__img:hover, img:hover{
+						transition: all 0.2s linear;
+						-webkit-transform: scale(1.1);
+						-ms-transform: scale(1.1);
+						transform: scale(1.1);
+					}
+				}
+			}
+		}
+	}
+}

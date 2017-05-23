@@ -1,11 +1,18 @@
 #reuniao{
+	background-image: url('../images/FundoContato.jpg');
+		background-repeat: no-repeat;
+	background-position: top center;
+	background-size:  cover;
+	background-attachment: fixed;
 	margin-top: 5px;
+	margin-bottom: 0px;
+
 	
 	.container-fluid{
 
 		hgroup{
 		text-align: center;
-		color: $font_color;
+		color: $font_color_slider;
 		font-family: $font_main;
 
 			.img-container{
@@ -26,6 +33,7 @@
 						height: auto;
 						display: block;
 						margin: auto;
+						padding-top: 30px;
 						}
 						.img-container:hover, img-container__img:hover, img:hover{
 								transition: all 0.2s linear;
@@ -42,13 +50,20 @@
 			@include make-sm-column(6);
 			@include make-md-column(6);
 				
-				.conteudo-container__conteudo{
+				.conteudo-container__conteudo{ 
 				@include make-xs-column-offset(0);
 				@include make-sm-column-offset(0);
 				@include make-md-column-offset(1);
 					a{
+					text-decoration: none;
 						> h2{
+						transition: all 0.4s linear;
 							font-size: $font_size_titulos;
+							color: $font_color_slider;
+						}
+						&:hover > h2{
+							transition: all 0.4s linear;
+							color:  $font_color_hover;
 						}
 					}
 
