@@ -13,7 +13,7 @@ margin-top: 30px;
 }
 
 footer{
-
+ 
 	 .navbar{
 	 	background-color: $background_color;
 	 
@@ -137,7 +137,7 @@ footer{
 					@include make-md-column-offset(0);
 
 					> img{
-						max-width: 100%;
+						max-width: 60%;
 						height: auto;
 						display: block;
 						margin: auto;  
